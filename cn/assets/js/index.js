@@ -74,7 +74,6 @@ function initAnchor (doc) {
 // 初始化右上角分类大链接跳转
 function initHead () {
 	$.get('/SUMMARY.md', function (data) {
-		debugger
 		var result = md.render(data);
 		$('.header').append(result);
 		$('.header ul').addClass('g-clearfix');
@@ -83,7 +82,6 @@ function initHead () {
 			return false
 		})
 		if (location.hash === '') {
-			debugger
 			initMenu($('.header a').eq(0).attr('href'))
 		} else if (Hash('sort')) {
 			initMenu(Hash('sort'))

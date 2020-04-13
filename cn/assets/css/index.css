@@ -70,6 +70,7 @@ a:hover { opacity: 0.7; }
     height: 100%;
     box-sizing: border-box;
     padding-top: 102px;
+    padding-right: 10px;
     border-right: 1px solid #e9ecf2;
     position: absolute;
     left: 0;
