@@ -88,11 +88,21 @@ Done.
 ```
 
 `方法一结果`
+
 <img src="https://weixin.senparc.com/images/SCF/Installs/02.1.png" />
+
+> 如果报错如下图
+
+![Image Text](/start/images/exec_updata_database_error.png)
+
+> 则是因为默认的启动项目不是Senparc.Web导致的，更改默认的启动项目为Senparc.Web，再执行此命令即可
+
+![Image Text](/start/images/set_as_startup_project.png)
 
 
 
 `方法二结果`
+
 <img src="https://weixin.senparc.com/images/SCF/Installs/02.2.png" />
 
 
