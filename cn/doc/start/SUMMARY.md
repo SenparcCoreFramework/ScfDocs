@@ -9,3 +9,8 @@
 
 * [名词解释](qa/explanation_of_terms.md)
 * [常见问题](qa/common_problem.md)
+
+## 新发布
+
+* [新功能](release/new_function.md)
+* [日志](release/log.md)
