@@ -4,8 +4,8 @@ let morgan = require('morgan');
 
 let app = connect()
 	.use(morgan('combined'))
-	.use('/', serveStatic(__dirname + '/assets'))
-	.use('/', serveStatic(__dirname + '/doc'))
+	.use('/', serveStatic(__dirname + '/docs/assets'))
+	.use('/', serveStatic(__dirname + '/docs/doc'))
 	// .use('/', function (req, res) {
 	// 	res.writeHead(302, {'Location': '/index.html'});
 	//     res.end();
