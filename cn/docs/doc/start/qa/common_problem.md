@@ -2,7 +2,7 @@
 
 > 如何修改数据库配置
 
-![Image Text](../images/modify_database_connectstring.png)
+![Image Text](/start/images/modify_database_connectstring.png)
 
 > .net命令dotnet ef执行报错
 
