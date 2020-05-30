@@ -1,5 +1,11 @@
+var root_path = "/docs/doc";
+var debug = false;
+
 // 程序入口
 $(function () {
+	if(debug){
+		root_path = "";
+	}
 	initZoom();
 	initHead();
 })
@@ -72,8 +78,8 @@ function initAnchor (doc) {
 }
 
 // 初始化右上角分类大链接跳转
-function initHead () {
-	$.get('/SUMMARY.md', function (data) {
+function initHead() {
+	$.get(root_path + '/SUMMARY.md', function (data) {
 		var result = md.render(data);
 		$('.header').append(result);
 		$('.header ul').addClass('g-clearfix');
@@ -91,8 +97,8 @@ function initHead () {
 }
 
 // 初始化左侧菜单与点击事件
-function initMenu (path) {
-	$.get(path + '/SUMMARY.md', function (data) {
+function initMenu(path) {
+	$.get(root_path + '/' + path + '/SUMMARY.md', function (data) {
 		var result = md.render(data);
 		$('.menu').html(result);
 		$('.menu a').click(function () {
@@ -100,7 +106,7 @@ function initMenu (path) {
 				window.open($(this).attr('href'));
 				return false
 			}
-			location.hash = 'sort=' + path + '&doc=' + $(this).attr('href')
+			location.hash = 'sort=' + root_path + '/' + path + '&doc=' + $(this).attr('href')
 			return false
 		})
 		$('.content').css('padding-left', $('.menu').width())
@@ -166,12 +172,12 @@ function autoImagePrefix (doc) {
 				doc.pop();
 				doc.unshift(sort);
 				doc.push(path);
-				return 'src="' + doc.join('/') + '"';
+				//return 'src="' + doc.join('/') + '"';
+				return 'src="' + root_path + '/' + path + '"';
 			}
 			return match
 		})
 	} catch (e) {
 		return doc
-		console.error(e)
 	}
 }
