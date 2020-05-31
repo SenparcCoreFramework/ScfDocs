@@ -3,6 +3,7 @@ var debug = false;
 
 // 程序入口
 $(function () {
+	debugger
 	if(debug){
 		root_path = "";
 	}
