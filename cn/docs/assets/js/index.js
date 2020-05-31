@@ -1,4 +1,4 @@
-var root_path = "/ScfDocs/cn/doc";
+var root_path = "/ScfDocs/cn/docs/doc";
 var debug = false;
 
 // 程序入口
