@@ -1,5 +1,5 @@
 var root_path = "/ScfDocs/cn/doc";
-var debug = true;
+var debug = false;
 
 // 程序入口
 $(function () {
