@@ -1,8 +1,9 @@
-var root_path = "/docs/doc";
-var debug = false;
+var root_path = "/ScfDocs/doc";
+var debug = true;
 
 // 程序入口
 $(function () {
+	debugger
 	if(debug){
 		root_path = "";
 	}

@@ -60,6 +60,14 @@ SCF 除了会为大家提供完善的框架代码，还会：
 ### 第一步：准备数据库
 确保已经安装 SQL Server 2012 及以上版本，系统登录用户具有数据库创建权限（可以不需要使用sa等账号登录），如果必须要使用账号登录，[请看这里](https://github.com/SenparcCoreFramework/SCF/wiki/%E5%A6%82%E4%BD%95%E4%BF%AE%E6%94%B9%E9%BB%98%E8%AE%A4%E6%95%B0%E6%8D%AE%E5%BA%93%E8%BF%9E%E6%8E%A5%E5%AD%97%E7%AC%A6%E4%B8%B2%EF%BC%9F)
 
+> 先在appsetting里面看一下SenparcCoreSetting中的DatabaseName是什么节点，如下图
+
+![Image Text](/start/images/appsetting_database_name.png)
+
+> 再到Senparc.Web/App_Data/SenparcConfig.config文件中找到对应节点下的ConnectionStringFull，修改即可
+
+![Image Text](/start/images/senparcconfig_database.png)
+
 ### 第二步：准备命令行工具（可跳过）
 
 > 这一步是为喜欢体验手敲命令快感的极客准备的，您也可以跳过这一步，直接进入到【第三步】。
